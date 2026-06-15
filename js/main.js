@@ -692,7 +692,29 @@ document.head.appendChild(style);
    SCROLL REVEAL OBSERVER
    ========================================== */
 function initScrollReveal() {
-  const reveals = document.querySelectorAll('[class*="reveal"]');
+  // 1. Apply Pulse animation to CTA buttons
+  const ctas = document.querySelectorAll('a[href="donate.html"].btn-primary');
+  ctas.forEach(cta => cta.classList.add('pulse'));
+
+  // 2. Select elements to animate
+  const dynamicReveals = document.querySelectorAll('section:not(.page-hero):not(.hero), .card, .stat-card, .founder-card, .gallery-item, .impact-visuals > div, .accordion-item');
+  
+  // 3. Dynamically add the base 'reveal' class and stagger classes based on index/grid position
+  dynamicReveals.forEach((el, index) => {
+    if (!el.classList.contains('reveal')) {
+      el.classList.add('reveal');
+      
+      // Add staggered delays for grid items
+      if (el.classList.contains('card') || el.classList.contains('stat-card') || el.classList.contains('gallery-item') || el.classList.contains('accordion-item')) {
+        const staggerIndex = index % 4; // Max 4 columns usually
+        if (staggerIndex === 1) el.classList.add('delay-100');
+        if (staggerIndex === 2) el.classList.add('delay-200');
+        if (staggerIndex === 3) el.classList.add('delay-300');
+      }
+    }
+  });
+
+  const reveals = document.querySelectorAll('.reveal');
   if (reveals.length === 0) return;
 
   const observerOptions = {

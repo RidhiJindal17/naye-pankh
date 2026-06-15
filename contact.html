@@ -6,6 +6,43 @@
   <meta name="description" content="Get in touch with NayePankh Foundation. Find our email, phone, location details, and read our frequently asked questions (FAQ).">
   <title>Contact Us | NayePankh Foundation - UP Government Registered NGO</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Modern Validation & Micro-interactions */
+    .form-input {
+      transition: all 0.3s ease;
+    }
+    .form-input:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .form-input:invalid:not(:placeholder-shown) {
+      border-color: #ef4444;
+      animation: shake 0.4s ease;
+    }
+    .form-input:valid:not(:placeholder-shown) {
+      border-color: #10b981;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+    }
+    .btn-primary {
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
+    }
+    .btn-primary:active {
+      transform: scale(0.97);
+    }
+  </style>
+
+  <!-- SEO & Open Graph Tags -->
+  <meta property="og:title" content="NayePankh Foundation - Youth NGO">
+  <meta property="og:description" content="Support NayePankh Foundation. Donate to sponsor children's education, women's hygiene kits, and food relief.">
+  <meta property="og:image" content="https://nayepankh.vercel.app/assets/images/hero_children.png">
+  <meta property="og:url" content="https://nayepankh.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="NGO, Charity, Donation, India, Kanpur, Education, Food Relief">
 </head>
 <body>
 
@@ -16,11 +53,7 @@
     <div class="container navbar">
       <a href="index.html" class="logo">
         <div class="logo-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-            <path d="M12 2v20"></path>
-            <path d="M17 12H7"></path>
-          </svg>
+          <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="logo-text">Naye<span>Pankh</span></div>
       </a>
@@ -142,8 +175,8 @@
           </div>
 
           <div class="form-group">
-            <label for="contact-subject">Subject *</label>
-            <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Inquiry about corporate CSR partnership" required>
+            <label for="contact-phone">Phone Number *</label>
+            <input type="tel" id="contact-phone" class="form-input" placeholder="e.g. +91 9876543210" required>
           </div>
 
           <div class="form-group">
@@ -170,11 +203,16 @@
       
       <!-- Interactive Vector Map Card -->
       <div class="map-card">
-        <div class="map-placeholder">
-          <div class="map-canvas"></div>
-          <div class="map-pin">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          </div>
+        <div class="map-placeholder" style="padding: 0; background: transparent; border: none; height: 300px; overflow: hidden; border-radius: var(--radius-md);">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114294.61989066665!2d80.24587635956793!3d26.44741275990234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1707000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
         <div class="map-details">
           <h3>Kanpur Headquarters</h3>
@@ -218,6 +256,17 @@
             <p style="font-size: 0.85rem; color: var(--text-muted);">Central warehouse for books & hygiene kit inventory.</p>
           </div>
         </div>
+
+        <div class="founder-card" style="padding: 24px; display: flex; align-items: center; gap: 20px;">
+          <div class="theme-toggle" style="background-color: var(--accent-light); color: var(--accent); flex-shrink: 0; width:50px; height:50px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </div>
+          <div>
+            <h4 style="color: var(--primary-dark); margin-bottom: 4px;">Social Media</h4>
+            <p style="font-weight: 700; color: var(--text-main); font-size: 1.05rem;">@NayePankh</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Follow our latest field updates and impact stories.</p>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -231,11 +280,7 @@
       <div class="footer-col footer-about">
         <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
           <div class="logo-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-              <path d="M12 2v20"></path>
-              <path d="M17 12H7"></path>
-            </svg>
+            <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="logo-text">Naye<span>Pankh</span></div>
         </a>

@@ -6,6 +6,15 @@
   <meta name="description" content="View NayePankh Foundation's impact gallery. Explore photos of our education drives, food distribution, volunteer activities, and community outreach.">
   <title>Gallery & Impact | NayePankh Foundation</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO & Open Graph Tags -->
+  <meta property="og:title" content="NayePankh Foundation - Youth NGO">
+  <meta property="og:description" content="Support NayePankh Foundation. Donate to sponsor children's education, women's hygiene kits, and food relief.">
+  <meta property="og:image" content="https://nayepankh.vercel.app/assets/images/hero_children.png">
+  <meta property="og:url" content="https://nayepankh.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="NGO, Charity, Donation, India, Kanpur, Education, Food Relief">
 </head>
 <body>
 
@@ -16,11 +25,7 @@
     <div class="container navbar">
       <a href="index.html" class="logo">
         <div class="logo-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-            <path d="M12 2v20"></path>
-            <path d="M17 12H7"></path>
-          </svg>
+          <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="logo-text">Naye<span>Pankh</span></div>
       </a>
@@ -54,13 +59,13 @@
   <!-- ==========================================
        PAGE HERO
        ========================================== -->
-  <section class="page-hero">
+  <section class="page-hero" style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.6)), url('assets/images/nayepankh_2.avif') center/cover; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: white; padding-top: 80px;">
     <div class="container reveal-fade">
-      <h1 class="text-gradient">Gallery & Impact</h1>
-      <div class="breadcrumb">
-        <a href="index.html">Home</a>
-        <span class="breadcrumb-separator">&gt;</span>
-        <span class="breadcrumb-current">Gallery & Impact</span>
+      <h1 style="font-size: 3.5rem; font-weight: 800; letter-spacing: 1px; margin-bottom: 20px; text-shadow: 0 4px 12px rgba(0,0,0,0.3);">Gallery & Impact</h1>
+      <div class="breadcrumb" style="display: inline-flex; background: rgba(255,255,255,0.1); padding: 8px 24px; border-radius: 50px; backdrop-filter: blur(10px); font-size: 0.95rem; font-weight: 500;">
+        <a href="index.html" style="color: white;">Home</a>
+        <span class="breadcrumb-separator" style="margin: 0 10px; opacity: 0.6;">&gt;</span>
+        <span class="breadcrumb-current" style="color: var(--accent);">Gallery & Impact</span>
       </div>
     </div>
   </section>
@@ -160,7 +165,7 @@
         <!-- Item 1: Slum School Education -->
         <div class="gallery-item show" data-category="education">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/slum_school.png" alt="Slum Coaching Camp">
+            <img loading="lazy" src="assets/images/slum_school.png" alt="Slum Coaching Camp">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -182,7 +187,7 @@
         <!-- Item 2: Food Distribution -->
         <div class="gallery-item show" data-category="food">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/food_drive.png" alt="Meal Distribution Drive">
+            <img loading="lazy" src="assets/images/food_drive.png" alt="Meal Distribution Drive">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -204,7 +209,7 @@
         <!-- Item 3: Hygiene awareness -->
         <div class="gallery-item show" data-category="awareness">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/hygiene_drive.png" alt="Women's Hygiene Camp">
+            <img loading="lazy" src="assets/images/hygiene_drive.png" alt="Women's Hygiene Camp">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -226,7 +231,7 @@
         <!-- Item 4: Volunteer Activities -->
         <div class="gallery-item show" data-category="volunteer">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/volunteer_group.png" alt="Youth Volunteering Meeting">
+            <img loading="lazy" src="assets/images/volunteer_group.png" alt="Youth Volunteering Meeting">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -248,7 +253,7 @@
         <!-- Item 5: Community celebration -->
         <div class="gallery-item show" data-category="events">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/community_celebration.png" alt="Community Celebration Day">
+            <img loading="lazy" src="assets/images/community_celebration.png" alt="Community Celebration Day">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -270,7 +275,7 @@
         <!-- Item 6: Blanket distribution -->
         <div class="gallery-item show" data-category="awareness">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/clothing_drive.png" alt="Winter Blanket Drive">
+            <img loading="lazy" src="assets/images/clothing_drive.png" alt="Winter Blanket Drive">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -292,7 +297,7 @@
         <!-- Item 7: Education support -->
         <div class="gallery-item show" data-category="education">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/education_drive.png" alt="Classroom Support Program">
+            <img loading="lazy" src="assets/images/education_drive.png" alt="Classroom Support Program">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -314,7 +319,7 @@
         <!-- Item 8: Drawing Activity -->
         <div class="gallery-item show" data-category="events">
           <div class="gallery-img-wrapper">
-            <img src="assets/images/hero_children.png" alt="Children's Drawing Activity">
+            <img loading="lazy" src="assets/images/hero_children.png" alt="Children's Drawing Activity">
             <div class="gallery-overlay">
               <span class="gallery-zoom-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -343,7 +348,7 @@
   <div class="lightbox" id="gallery-lightbox">
     <span class="lightbox-close">&times;</span>
     <div class="lightbox-content">
-      <img id="lightbox-img" src="" alt="Campaign Zoomed">
+      <img loading="lazy" id="lightbox-img" src="" alt="Campaign Zoomed">
       <div id="lightbox-caption"></div>
     </div>
   </div>
@@ -356,11 +361,7 @@
       <div class="footer-col footer-about">
         <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
           <div class="logo-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-              <path d="M12 2v20"></path>
-              <path d="M17 12H7"></path>
-            </svg>
+            <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="logo-text">Naye<span>Pankh</span></div>
         </a>

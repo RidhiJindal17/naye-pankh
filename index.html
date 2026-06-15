@@ -6,6 +6,15 @@
   <meta name="description" content="NayePankh Foundation is a UP Government registered NGO and one of the largest student-led organizations in India. Sponsoring child education, food distribution, women's menstrual hygiene, and clothing drives.">
   <title>NayePankh Foundation | UP Govt. Registered Youth NGO</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO & Open Graph Tags -->
+  <meta property="og:title" content="NayePankh Foundation - Youth NGO">
+  <meta property="og:description" content="Support NayePankh Foundation. Donate to sponsor children's education, women's hygiene kits, and food relief.">
+  <meta property="og:image" content="https://nayepankh.vercel.app/assets/images/hero_children.png">
+  <meta property="og:url" content="https://nayepankh.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="NGO, Charity, Donation, India, Kanpur, Education, Food Relief">
 </head>
 <body>
 
@@ -16,11 +25,7 @@
     <div class="container navbar">
       <a href="index.html" class="logo" id="main-logo">
         <div class="logo-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-            <path d="M12 2v20"></path>
-            <path d="M17 12H7"></path>
-          </svg>
+          <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="logo-text">Naye<span>Pankh</span></div>
       </a>
@@ -54,41 +59,15 @@
   <!-- ==========================================
        HERO BANNER SECTION
        ========================================== -->
-  <section class="hero">
-    <div class="container grid-2">
-      <div class="hero-content reveal-left">
-        <div class="tagline">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-          </svg>
-          Badalte Bharat Ki Nayi Tasveer
-        </div>
-        <h1 id="hero-title">Giving <span class="text-gradient">Wings</span> to Dreams</h1>
-        <p class="hero-description" id="hero-desc">
-          NayePankh Foundation is a student-led NGO working to uplift underprivileged communities through education, food drives, hygiene awareness, clothing support, and social impact initiatives.
+  <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('assets/images/nayepankh_2.avif') center/cover; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; color: white; padding-top: 80px;">
+    <div class="container reveal-fade">
+      <div style="max-width: 800px;">
+        <h4 style="font-size: 1rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 20px; color: white;">UP GOVERNMENT, 80G & 12A Registered NGO</h4>
+        <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 24px; text-shadow: 0 4px 12px rgba(0,0,0,0.3); color: white;">It's that easy to bring a Smile on Their Faces</h1>
+        <p style="font-size: 1.25rem; margin-bottom: 30px; font-weight: 500; text-shadow: 0 2px 8px rgba(0,0,0,0.5); line-height: 1.6;">
+          We don't ask for much, just help us with what you can - Be it Money, Skill or Your Time
         </p>
-        <div class="hero-btns">
-          <a href="donate.html" class="btn btn-accent" id="hero-cta-donate">Donate Now</a>
-          <a href="volunteer.html" class="btn btn-outline" id="hero-cta-volunteer">Become a Volunteer</a>
-        </div>
-      </div>
-      
-      <div class="hero-image-wrapper reveal-right">
-        <div class="hero-image-card">
-          <img src="assets/images/hero_children.png" alt="Happy underprivileged Indian children smiling under golden sunlight" id="hero-img">
-          
-          <div class="hero-badge" id="hero-badge-impact">
-            <div class="hero-badge-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <div class="hero-badge-txt">
-              <h4>200,000+</h4>
-              <p>Lives Impacted Since 2021</p>
-            </div>
-          </div>
-        </div>
+        <a href="donate.html" class="btn btn-primary pulse" style="padding: 16px 36px; font-size: 1.1rem; background-color: white; color: var(--primary-dark);">Donate Now</a>
       </div>
     </div>
   </section>
@@ -166,7 +145,7 @@
         <!-- Card 1: Education -->
         <div class="program-mini-card reveal delay-100">
           <div class="program-mini-img">
-            <img src="assets/images/education_drive.png" alt="Children studying in an open community library classroom">
+            <img loading="lazy" src="assets/images/education_drive.png" alt="Children studying in an open community library classroom">
           </div>
           <div class="program-mini-content">
             <h3>Education for Children</h3>
@@ -178,7 +157,7 @@
         <!-- Card 2: Food Distribution -->
         <div class="program-mini-card reveal delay-200">
           <div class="program-mini-img">
-            <img src="assets/images/food_drive.png" alt="Volunteers serving warm meals to children in a community center">
+            <img loading="lazy" src="assets/images/food_drive.png" alt="Volunteers serving warm meals to children in a community center">
           </div>
           <div class="program-mini-content">
             <h3>Food Distribution</h3>
@@ -190,7 +169,7 @@
         <!-- Card 3: Women Hygiene -->
         <div class="program-mini-card reveal delay-300">
           <div class="program-mini-img">
-            <img src="assets/images/hygiene_drive.png" alt="Hygiene kit and sanitary pad distribution camp for rural women">
+            <img loading="lazy" src="assets/images/hygiene_drive.png" alt="Hygiene kit and sanitary pad distribution camp for rural women">
           </div>
           <div class="program-mini-content">
             <h3>Women Hygiene Awareness</h3>
@@ -202,7 +181,7 @@
         <!-- Card 4: Clothing Drives -->
         <div class="program-mini-card reveal delay-400">
           <div class="program-mini-img">
-            <img src="assets/images/hygiene_drive.png" alt="Volunteers distributing blankets and winter clothing packages" style="filter: hue-rotate(90deg);">
+            <img loading="lazy" src="assets/images/hygiene_drive.png" alt="Volunteers distributing blankets and winter clothing packages" style="filter: hue-rotate(90deg);">
           </div>
           <div class="program-mini-content">
             <h3>Clothing Drives</h3>
@@ -214,7 +193,7 @@
         <!-- Card 5: Community Support -->
         <div class="program-mini-card reveal delay-500">
           <div class="program-mini-img">
-            <img src="assets/images/food_drive.png" alt="Stray animal safety campaign with reflective collars" style="filter: hue-rotate(180deg);">
+            <img loading="lazy" src="assets/images/food_drive.png" alt="Stray animal safety campaign with reflective collars" style="filter: hue-rotate(180deg);">
           </div>
           <div class="program-mini-content">
             <h3>Community Support</h3>
@@ -371,11 +350,7 @@
       <div class="footer-col footer-about">
         <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
           <div class="logo-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-              <path d="M12 2v20"></path>
-              <path d="M17 12H7"></path>
-            </svg>
+            <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="logo-text">Naye<span>Pankh</span></div>
         </a>

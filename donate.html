@@ -6,6 +6,15 @@
   <meta name="description" content="Support NayePankh Foundation. Donate to sponsor children's education, women's hygiene kits, and food relief. Claim 50% tax exemption under Section 80G.">
   <title>Donate & Join Us | NayePankh Foundation</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO & Open Graph Tags -->
+  <meta property="og:title" content="NayePankh Foundation - Youth NGO">
+  <meta property="og:description" content="Support NayePankh Foundation. Donate to sponsor children's education, women's hygiene kits, and food relief.">
+  <meta property="og:image" content="https://nayepankh.vercel.app/assets/images/hero_children.png">
+  <meta property="og:url" content="https://nayepankh.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="NGO, Charity, Donation, India, Kanpur, Education, Food Relief">
 </head>
 <body>
 
@@ -16,11 +25,7 @@
     <div class="container navbar">
       <a href="index.html" class="logo">
         <div class="logo-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-            <path d="M12 2v20"></path>
-            <path d="M17 12H7"></path>
-          </svg>
+          <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="logo-text">Naye<span>Pankh</span></div>
       </a>
@@ -54,13 +59,103 @@
   <!-- ==========================================
        PAGE HERO
        ========================================== */ -->
-  <section class="page-hero">
+  <section class="page-hero" style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('assets/images/hero_children.png') center/cover;">
     <div class="container">
-      <h1>Support NayePankh</h1>
+      <h1>Your Small Contribution Creates Big Change</h1>
       <div class="breadcrumb">
         <a href="index.html">Home</a>
         <span class="breadcrumb-separator">&gt;</span>
-        <span class="breadcrumb-current">Donate & Join</span>
+        <span class="breadcrumb-current">Donate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EMOTIONAL STORYTELLING & IMPACT
+       ========================================== */ -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="story-impact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+        <div class="story-content">
+          <h2 class="decorated">Every Life Deserves a Chance</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 20px;">
+            A few months ago, 10-year-old Aarav was spending his days picking through waste, hoping to find enough scraps to buy a single meal. Today, he sits in a makeshift classroom with a notebook in hand and a bright smile on his face. 
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 20px;">
+            This transformation isn't a miracle—it's the result of people like you choosing to care. For millions of underprivileged families, a small act of kindness can break the generational cycle of poverty. Your contribution provides the fundamental building blocks of a dignified life.
+          </p>
+          <div style="background-color: var(--bg-card); padding: 20px; border-left: 4px solid var(--primary); border-radius: var(--radius-sm); font-style: italic;">
+            "We make a living by what we get, but we make a life by what we give."
+          </div>
+        </div>
+        <div class="impact-visuals" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div style="background: var(--bg-card); padding: 30px 20px; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 10px;">2M+</div>
+            <div style="font-weight: 600;">Meals Distributed</div>
+          </div>
+          <div style="background: var(--bg-card); padding: 30px 20px; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 10px;">50k+</div>
+            <div style="font-weight: 600;">Children Educated</div>
+          </div>
+          <div style="background: var(--bg-card); padding: 30px 20px; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--secondary); margin-bottom: 10px;">10k+</div>
+            <div style="font-weight: 600;">Hygiene Kits</div>
+          </div>
+          <div style="background: var(--bg-card); padding: 30px 20px; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 10px;">100+</div>
+            <div style="font-weight: 600;">Cities Reached</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WHY DONATE?
+       ========================================== */ -->
+  <section class="section-padding" style="background-color: var(--bg-card);">
+    <div class="container">
+      <h2 class="decorated center">Why Donate?</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 40px auto; color: var(--text-muted);">
+        Your donations are directly utilized to support underprivileged communities through transparent, youth-led initiatives.
+      </p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(239,68,68,0.1); color: var(--primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+          </div>
+          <h4 style="margin-bottom: 10px;">Education</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Providing study materials, tuition, and stationary for slum children.</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(245,158,11,0.1); color: var(--accent); display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <h4 style="margin-bottom: 10px;">Food Drives</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Serving hot, nutritious meals to the hungry and homeless.</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(16,185,129,0.1); color: var(--secondary); display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h4 style="margin-bottom: 10px;">Hygiene</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Distributing sanitary pads and creating menstrual hygiene awareness.</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(59,130,246,0.1); color: #3b82f6; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46L16 2a8 8 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path></svg>
+          </div>
+          <h4 style="margin-bottom: 10px;">Clothing</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Organizing winter clothing drives to provide warmth to those in need.</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(139,92,246,0.1); color: #8b5cf6; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h4 style="margin-bottom: 10px;">Community Welfare</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">General upliftment, emergency relief, and stray animal feeding.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -98,14 +193,13 @@
             
             <div class="donation-presets" style="margin-bottom: 20px;">
               <button type="button" class="preset-btn step-preset-btn" data-value="500">₹ 500</button>
-              <button type="button" class="preset-btn step-preset-btn" data-value="1500">₹ 1,500</button>
+              <button type="button" class="preset-btn step-preset-btn" data-value="1000">₹ 1,000</button>
               <button type="button" class="preset-btn step-preset-btn active" data-value="2500">₹ 2,500</button>
-              <button type="button" class="preset-btn step-preset-btn" data-value="7500">₹ 7,500</button>
             </div>
 
             <div class="form-group">
               <label for="donation-step-amount">Custom Amount (INR):</label>
-              <input type="number" id="donation-step-amount" class="form-input" value="2500" min="10" placeholder="Enter amount in Rupees">
+              <input type="number" id="donation-step-amount" class="form-input" value="2500" min="10" placeholder="Enter custom amount">
             </div>
 
             <div class="form-group">
@@ -340,11 +434,7 @@
       <div class="footer-col footer-about">
         <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
           <div class="logo-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.37 8.91l-8.17-8.17a2.12 2.12 0 0 0-3 0l-8.17 8.17a2.12 2.12 0 0 0 0 3l8.17 8.17a2.12 2.12 0 0 0 3 0l8.17-8.17a2.12 2.12 0 0 0 0-3z"></path>
-              <path d="M12 2v20"></path>
-              <path d="M17 12H7"></path>
-            </svg>
+            <img loading="lazy" src="assets/images/logo.jpeg" alt="NayePankh Logo" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="logo-text">Naye<span>Pankh</span></div>
         </a>
